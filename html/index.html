@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Report</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/idn.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 navbar-light">
+      <div class="container">
+        <!-- Logo Navbar -->
+        <a href="#" class="navbar-brand d-flex align-items-center gap-2">
+          <img src="src/logo/idn.png" alt="logo" width="40" class="d-inline-block align-text-top rounded-2">
+          <span class="fw-bold text-primary">IDN E-Report</span>
+        </a>
+        <!-- Button Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <!-- Link Navbar -->
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-primary">Beranda</a>  
+            </li>
+            <li class="nav-item">
+              <a href=#about class="nav-link text-primary">Tentang</a>  
+            </li>
+            <li class="nav-item">
+              <a href=#services class="nav-link text-primary">Services</a>  
+            </li>
+            <li class="nav-item">
+              <a href="report.html" class="nav-link text-primary">Laporan</a>  
+            </li>
+            <li class="nav-item">
+              <a href=#faq class="nav-link text-primary">FAQ</a>  
+            </li>
+            <li>
+              <a href="report.html" class="btn btn-primary">Lihat Laporan</a>
+            </li>
+            
+
+           </ul>
+         </div>
+      </div>
+     </nav>
+
+    <!-- Hero Section -->
+<section class="py-5 bg-primary text-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Teks Hero -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+        <h1 class="display-5 fw-bold mb-3">Selamat Datang di <span class="text-warning">E-Report Sekolah</span></h1>
+        <p class="lead mb-4">
+          Sistem pelaporan sekolah yang cepat, transparan, dan efisien.  
+          Laporkan masalah fasilitas hanya dengan beberapa klik.
+        </p>
+        <a href="add-report.html" class="btn btn-light btn-lg me-3 fw-semibold text-primary">
+          + Buat Laporan
+        </a>
+        <a href="report.html" class="btn btn-outline-light btn-lg fw-semibold">
+          Lihat Semua
+        </a>
+      </div>
+
+      <!-- Gambar Hero -->
+      <div class="col-lg-6 col-md-12 text-center">
+        <img src="src/logo/idn.png" alt="Ilustrasi E-Report"
+          class="img-fluid rounded-4 shadow-lg" style="max-height: 320px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Hero Section -->
+    <main class="container py-5">
+
+
+  <h1 class="mb-4 fw-bold text-center">Dashboard E-Report</h1>
+
+
+  <div class="row text-center" id="dashboard-stats">
+    <div class="col-md-3 mb-3">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 id="totalReports">0</h3>
+          <p>Total Laporan</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-3 mb-3">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 id="newReports">0</h3>
+          <p>Status: Baru</p>
+
+          </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-3 mb-3">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 id="processReports">0</h3>
+          <p>Status: Diproses</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-3 mb-3">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 id="doneReports">0</h3>
+          <p>Status: Selesai</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="text-center mt-4">
+    <a href="add-report.html" class="btn btn-primary">+ Tambah Laporan Baru</a>
+    <a href="report.html" class="btn btn-outline-secondary">Lihat Semua Laporan</a>
+  </div>
+
+
+</main>
+
+<!-- Tentang -->
+ <section id="about" class="py-5 bg-primary">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <img src="/img/tentang 2.jpeg" class="img-fluid rounded-4 shadow-lg" style="width: 100vw;" height="auto" alt="Tentang IDN E-Report">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3 text-light">Tentang IDN E-Report</h2>
+        <p class="lead fw-bold mb-4 text-light">
+          IDN E-Report adalah platform pelaporan digital yang <span class="text-warning">memudahkan siswa dan staf sekolah melaporkan kerusakan</span> fasilitas secara cepat, transparan, dan efisien.
+        </p>
+        <a href="report.html" class="btn btn-outline-light btn-lg fw-semibold">
+          Lihat Semua
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+ <section id="services">
+  <div class="container">
+            <!-- Judul Section -->
+             <div class="text-center mb-5 text-light">
+                <h2 class="fw-bold">Pelayanan</h2>
+                <p class="text-muted text-light">
+                    Kami membaca keluhan anda dan memperbaiki masalahnya.
+                </p>
+             </div>
+             <!-- Baris Card -->
+               <div class="row g-4">
+                <!-- Service 1 -->
+                 <div class="col-md-4">
+                    <article class="card service-card h-100 text-center p-4 shadow-sm" aria-labelledby="svc-design">
+                        <div class="icon mb-3" aria-hidden="true">
+                            <i class="bi bi-palette-fill fs-2"></i>
+                        </div>
+                        <h3 id="svc-design" class="h5 fw-bold">Mendengar</h3>
+                        <p class="text-muted small">
+                            Kami mendengar keluhan siswa dan guru tentang barbagai hal.
+                        </p>
+                        <a href="#" class="stretched-link" aria-label="Learn more about UI and Web Design"></a>
+                    </article>
+                 </div>
+                 <!-- Service 2 -->
+                 <div class="col-md-4">
+                    <article class="card service-card h-100 text-center p-4 shadow-sm" aria-labelledby="svc-apps">
+                        <div class="icon mb-3" aria-hidden="true">
+                            <i class="bi bi-phone-fill fs-2"></i>
+                        </div>
+                        <h3 id="svc-apps" class="h5 fw-bold">Mengidentifikasi</h3>
+                        <p class="text-muted small">
+                            Kami mencari masalah dari hal yang kalian keluh kesahkan.
+                        </p>
+                        <a href="#" class="stretched-link" aria-label="Learn more about Mobile Apps"></a>
+                    </article>
+                 </div>
+                 <!-- Service 3 -->
+                 <div class="col-md-4">
+                    <article class="card service-card h-100 text-center p-4 shadow-sm" aria-labelledby="svc-marketing">
+                        <div class="icon mb-3" aria-hidden="true">
+                            <i class="bi bi-megaphone-fill fs-2"></i>
+                        </div>
+                        <h3 id="svc-marketing" class="h5 fw-bold">Memperbaiki</h3>
+                        <p class="text-muted small">
+                            Kami membantu guru dan siswa untuk menyelesaikan masalah mereka.
+                        </p>
+                        <a href="#" class="stretched-link" aria-label="Learn more about Digital Marketing"></a>
+                    </article>
+                 </div>
+              </div>
+        </div>
+ </section>
+
+<!-- FAQ Section -->
+<section id="faq" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5 text-primary">Pertanyaan yang Sering Diajukan</h2>
+
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Apa itu IDN E-Report?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            IDN E-Report adalah sistem pelaporan fasilitas sekolah yang memudahkan siswa dan staf untuk melaporkan kerusakan secara digital, cepat, dan transparan.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Siapa yang dapat membuat laporan?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Semua siswa, guru, dan staf sekolah dapat membuat laporan fasilitas yang rusak melalui fitur “Tambah Laporan”.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Bagaimana cara mengecek status laporan?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Anda dapat melihat semua laporan dan statusnya melalui halaman “Lihat Laporan” di menu utama.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+  <footer class="bg-primary text-white text-center py-4 mt-auto">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 IDN E-Report | Dibuat untuk kemudahan pelaporan fasilitas sekolah</p>
+    </div>
+  </footer>
+
+
+<script>
+  function updateDashboard() {
+    const reports = JSON.parse(localStorage.getItem('reports')) || [];
+
+
+    const total = reports.length;
+    const baru = reports.filter(r => r.status === "Baru").length;
+    const proses = reports.filter(r => r.status === "Diproses").length;
+    const selesai = reports.filter(r => r.status === "Selesai").length;
+
+
+    document.getElementById('totalReports').innerText = total;
+    document.getElementById('newReports').innerText = baru;
+ document.getElementById('processReports').innerText = proses;
+    document.getElementById('doneReports').innerText = selesai;
+  }
+
+
+  updateDashboard();
+</script>
+
+
+    <!-- About Section -->
+
+    <!-- Services -->
+
+    <!-- Report -->
+
+    <!-- Frequently Ask Question -->
+
+    <!-- Footer -->
+
+
+<script>
+  AOS.init();
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</script>
+</body>
+</html>
+
+
+
+
+
